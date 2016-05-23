@@ -49,7 +49,6 @@
 #   5) the @ signs before some constituents (added by headify) unless it says
 #      that it's compatible with headify format.
 
-@INC=(".");
 require('stamp.inc');  &stamp;
 
 $numberlines = 1, shift(@ARGV) if $ARGV[0] eq "-n";  
