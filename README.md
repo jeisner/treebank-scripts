@@ -30,6 +30,7 @@ The `stamp.inc` script needs to be in a directory that is listed in
 the `PERL5LIB` or `PERLLIB` environment variable.
 
 Alternatively, you can run the scripts by invoking Perl directly, e.g.,
+
 	perl -I/path/to/treebank-scripts /path/to/treebank-scripts/oneline
 
 ## Documentation Files
