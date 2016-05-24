@@ -7,8 +7,6 @@ These scripts are filters that process the Penn Treebank.  They can be pipelined
 
 ## Overview
 
-Each script is documented through initial comments.  For an explanation of how some of these scripts are pipelined in a typical case, see section 6.2 ("Data Preparation") of [Jason Eisner's Ph.D. thesis](http://cs.jhu.edu/~jason/papers/#eisner-2001-thesis).
-
 The scripts read and write files in a common format.  To convert from the original Penn Treebank to this format, use the oneline script.  Some features of the format:
 
 - one sentence or rule per line
@@ -21,6 +19,18 @@ The scripts read and write files in a common format.  To convert from the origin
 - certain special characters have reserved meanings; instances of these
     characters in the original Treebank are transformed; see the oneline
     script for documentation of this
+
+## Usage
+
+Each script is documented through initial comments.  For an explanation of how some of these scripts are pipelined in a typical case, see section 6.2 ("Data Preparation") of [Jason Eisner's Ph.D. thesis](http://cs.jhu.edu/~jason/papers/#eisner-2001-thesis).
+
+If you plan to run the scripts from the command line, then you may
+want to add the script directory to your `PATH` environment variable.
+The `stamp.inc` script needs to be in a directory that is listed in
+the `PERL5LIB` or `PERLLIB` environment variable.
+
+Alternatively, you can run the scripts by invoking Perl directly, e.g.,
+	perl -I/path/to/treebank-scripts /path/to/treebank-scripts/oneline
 
 ## Documentation Files
 
